@@ -11,6 +11,19 @@ First of all, download [python3](https://www.python.org/downloads/).
        sudo apt update 
        sudo apt install python3
 
+Then install the [pycryptodome](https://pypi.org/project/pycryptodome/) library
+
+       pip3 install pycryptodome
+
+To use this repository you can click the clone button or, via bash:
+
+       git clone https://github.com/0xbadc0ffe/Pyxercise
+       
+If you do not have this command you can download it via:
+       
+       sudo apt install git
+       
+ for Debian, and [here](https://gitforwindows.org/) for Windows.
 
 
 

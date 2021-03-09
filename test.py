@@ -12,7 +12,6 @@ def gen_key(sol, dim=32, sol_md5=None):
     sol = str(sol)
     if not sol_md5:
         sol_md5 = MD5.new(sol.encode()).digest()
-        #print(sol_md5.hex())
     l = len(sol)
     if l == 0:
         return None
@@ -26,18 +25,12 @@ def gen_key(sol, dim=32, sol_md5=None):
             n = n.to_bytes((n.bit_length() + 7) // 8, 'big') or b'\0'
             sol += str(n)
         l = len(sol)
-    #print(l)
-    #print(sol)
     sol = pad(sol.encode(), dim)
     blocks = [ sol[i:i+dim] for i in range(0,l,dim)]
     key = b''
     prev = sol_md5
-    #print()
-    #print(blocks)
-    #print()
     for block in blocks:
         key = (int.from_bytes(key, 'big') + int.from_bytes(prev, 'little'))
-        #print(key)
         key = key.to_bytes((key.bit_length() + 7) // 8, 'big') or b'\0'
         key = int.from_bytes(key[:dim], byteorder="big" ) ^ int.from_bytes(block, byteorder="big")
         key = key.to_bytes((key.bit_length() + 7) // 8, 'big') or b'\0'

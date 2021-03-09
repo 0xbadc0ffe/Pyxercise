@@ -23,7 +23,7 @@ If you do not have this command you can download it for Debian with:
        
        sudo apt install git
        
- For Windows you can download [here](https://gitforwindows.org/).
+ For Windows you can download the bash/GUI version [here](https://gitforwindows.org/).
 
 
 

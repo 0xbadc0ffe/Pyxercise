@@ -24,9 +24,9 @@ To generate the first exercise use:
 
 To generate the next exercises you have to solve the first one. To unlock the exercise n+1 the syntax is the following: 
 
-    python3 test.py -n "solution"
+    python3 test.py -n "prev_solution"
     
-where solution is the solution of the exercise n
+where prev_solution is the solution of the exercise n
 
 
 **Example**:

@@ -6,7 +6,7 @@ import json
 import sys
 
 json_file = "hash.json"
-github = ""
+github = "https://github.com/0xbadc0ffe/Pyxercise"
 
 def gen_key(sol, dim=32, sol_md5=None):
     sol = str(sol)
@@ -59,21 +59,11 @@ def decrypt(filename, encfile, sol):
 def generate(num, sol):
     file_enc = f"Exercises/exercise{num}.enc"
     file_dec = f"Exercises/exercise{num}.py"
-    #key = gen_key(sol)
     decrypt(file_dec, file_enc, sol)
 
 
 
 if __name__ == "__main__":
-    # key = gen_key("loll")
-    # print(key)
-    # print(len(key))
-    # key = gen_key("loll", 32, MD5.new("loll".encode()).digest())
-    # print(key)
-    # print(len(key))
-    # key = gen_key("loll",256)
-    # print(key)
-    # print(len(key))
 
     usage = "\nUsage:\n\n   -start             generates the first\n\n   -n  solution       if solution of exercise n is correct generates the next exercise\n"
 

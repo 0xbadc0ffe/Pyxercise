@@ -20,10 +20,9 @@ To generate the first exercise use:
 
     python3 test.py -start
     
-## Next Exercise
+## Next Exercises
 
-To generate the next exercises the syntax is the following:
-For the exercise n+1 
+To generate the next exercises you have to solve the first one. To unlock the exercise n+1 the syntax is the following: 
 
     python3 test.py -n "solution"
     

@@ -19,11 +19,11 @@ To use this repository you can click the clone button or, via bash:
 
        git clone https://github.com/0xbadc0ffe/Pyxercise
        
-If you do not have this command you can download it via:
+If you do not have this command you can download it for Debian with:
        
        sudo apt install git
        
- for Debian, and [here](https://gitforwindows.org/) for Windows.
+ For Windows you can download [here](https://gitforwindows.org/).
 
 
 

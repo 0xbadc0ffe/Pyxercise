@@ -1,6 +1,6 @@
 # Pyxercise
 
-Python exercises with increasing level.
+Python exercises for students, with increasing level.
 
 ## Setup
 
